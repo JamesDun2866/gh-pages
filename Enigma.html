@@ -19,6 +19,9 @@
   <link rel="shortcut icon" href="/assets/favicon.ico">
   <link rel="stylesheet" href="Keyboard.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="p5.css">
+  <script type="text/javascript" src="knob.js"></script>
+  <script type="text/javascript" src="p5.js"></script>
 </head>
 
 <body>
@@ -45,11 +48,26 @@
 
 
 
+
   <section id="services">
     <textarea readonly id="result"></textarea>
     <br>
     <br>
     <br>
+    <input class="preset5" type="range" min="0" max="26" data-width="100" data-height="100" data-angleOffset="220" data-angleRange="280">
+    <input class="preset5" type="range" min="0" max="26" data-width="100" data-height="100" data-angleOffset="220" data-angleRange="280">
+    <input class="preset5" type="range" min="0" max="26" data-width="100" data-height="100" data-angleOffset="220" data-angleRange="280">
+    <input class="preset5" type="range" min="0" max="26" data-width="100" data-height="100" data-angleOffset="220" data-angleRange="280">
+    <script type="text/javascript">
+      for (var i = 1; i < 6; i++) {
+        Array.prototype.slice.call(document.getElementsByClassName('preset' + i)).forEach(function(el) {
+          new Knob(el, new Ui['P5']());
+          el.addEventListener('change', function() {
+            console.log(el.value)
+          })
+        })
+      }
+    </script>
     <br>
     <br>
     <br>
