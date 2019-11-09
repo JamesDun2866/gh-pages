@@ -9,7 +9,6 @@ body {
 	background: #0F1215;
 	font: 16px/30px "merriweather-regular", serif;
 	font-weight: normal;
-	color: #575859;
 	margin: 0;
 }
 .row {
@@ -21,90 +20,46 @@ body {
 textarea {
 	display: block;
 	padding: 18px 20px;
-	margin: 0 0 12px 0;
 	border: 0;
-	outline: none;
-	vertical-align: middle;
-	color: #a3a4a6;
 	font-family: "raleway-bold", sans-serif;
 	font-size: 15px;
 	line-height: 24px;
 	border-radius: 3px;
 	max-width: 100%;
 	background: rgba(255, 255, 255, 0.1);
-	-moz-transition: all 0.3s ease-in-out;
-	-o-transition: all 0.3s ease-in-out;
-	-webkit-transition: all 0.3s ease-in-out;
-	-ms-transition: all 0.3s ease-in-out;
-	transition: all 0.3s ease-in-out;
 	margin-left: auto;
 	margin-right: auto;
 	width: 80%;
 	resize: none;
 }
 
-.button,
-.button:visited,
-button,
-input[type="submit"],
-input[type="reset"],
-input[type="button"] {
+button {
 	display: inline-block;
 	font: 16px/30px "raleway-heavy", sans-serif;
 	padding: 9px 16px;
 	margin: 0 3px 6px 0;
 	background: #FFFFFF;
 	color: #000000;
-	text-decoration: none;
-	cursor: pointer;
-	height: auto;
-	text-align: center;
-	border: none;
-	-webkit-appearance: none;
-	-webkit-font-smoothing: inherit;
 	border-radius: 3px;
-	-moz-transition: all 0.3s ease-in-out;
-	-o-transition: all 0.3s ease-in-out;
-	-webkit-transition: all 0.3s ease-in-out;
-	-ms-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out;
 }
 
-.button:hover,
-button:hover,
-input[type="submit"]:hover,
-input[type="reset"]:hover,
-input[type="button"]:hover {
+button:hover
+ {
 	color: #FFFFFF;
 	background: #e64e04;
 }
 
 
 header {
-	height: 66px;
 	width: 100%;
 	position: fixed;
-	left: 0;
-	top: 0;
-	z-index: 600;
-	-moz-transition: all 0.5s ease-in-out;
-	-o-transition: all 0.5s ease-in-out;
-	-webkit-transition: all 0.5s ease-in-out;
-	-ms-transition: all 0.5s ease-in-out;
 	transition: all 0.5s ease-in-out;
-
 
 }
 header.opaque {
 	background: black;
 	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-@media only screen and (max-width:768px) {
-	header {
-		background: black;
-		border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-	}
 }
 
 #nav-wrap,
@@ -115,15 +70,12 @@ header.opaque {
 	padding: 0;
 }
 
-/* nav-wrap */
 #nav-wrap {
 	font: 13px "raleway-heavy", sans-serif;
 	text-transform: uppercase;
 	letter-spacing: 1.5px;
-	float: left;
 }
 
-/* hide toggle button */
 #nav-wrap > a {
 	display: none;
 }
@@ -135,10 +87,8 @@ ul#nav li {
 	height: 66px;
 }
 
-/* Links */
-ul#nav li a {
 
-	/* 14px padding top + 14px padding bottom + 38px line-height = 66px */
+ul#nav li a {
 	display: block;
 	padding: 14px 12px;
 	line-height: 38px;
@@ -146,10 +96,6 @@ ul#nav li a {
 	text-align: left;
 	color: #FFFFFF;
 	position: relative;
-	-moz-transition: color 0.2s ease-in-out;
-	-o-transition: color 0.2s ease-in-out;
-	-webkit-transition: color 0.2s ease-in-out;
-	-ms-transition: color 0.2s ease-in-out;
 	transition: color 0.2s ease-in-out;
 }
 
@@ -162,29 +108,4 @@ ul#nav li a:hover {
 	padding-top: 120px;
 	padding-bottom: 120px;
 	border-bottom: 1px solid #15191d;
-}
-
-.textarea1 {
-	display: block;
-	padding: 18px 20px;
-	margin: 0 0 12px 0;
-	border: 0;
-	outline: none;
-	vertical-align: middle;
-	color: #a3a4a6;
-	font-family: "raleway-bold", sans-serif;
-	font-size: 15px;
-	line-height: 24px;
-	border-radius: 3px;
-	max-width: 100%;
-	background: rgba(255, 255, 255, 0.1);
-	-moz-transition: all 0.3s ease-in-out;
-	-o-transition: all 0.3s ease-in-out;
-	-webkit-transition: all 0.3s ease-in-out;
-	-ms-transition: all 0.3s ease-in-out;
-	transition: all 0.3s ease-in-out;
-	margin-left: auto;
-	margin-right: auto;
-	width: 80%;
-	resize: none;
 }
